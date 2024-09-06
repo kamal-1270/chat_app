@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background: #F8F8F8;
+    background-image: url('https://lh5.ggpht.com/7iEqEROoV-l8oHbpYAp1OjY9qJJjAsxAybza2hmDKT8BX-ZnvN2avBD6SfYAiKV67w=h900');
+    font-family: 'Roboto', sans-serif;
+}
+.chat__section{
+    margin-top: 100px;
+}
+section.chat__section {
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    background-image: url('https://media.licdn.com/dms/image/C5612AQFI235iPZc25w/article-cover_image-shrink_720_1280/0/1631003527860?e=2147483647&v=beta&t=INigSgIEuo5O8XnQ9HrbR0-Y_JFDgvWRU2TEXVy8RKU');
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+
+.message__area {
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+}
+
+.message {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+
+.incoming {
+    background: #8F8BE8;
+    color: #fff;
+}
+
+.outgoing {
+    background: #e9eafd;
+    color: #787986;
+    margin-left: auto;
+}
+
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: chartreuse;
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    section.chat__section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .brand h1 {
+        font-size: 18px;
+    }
+
+    .message__area {
+        height: 400px;
+    }
+
+    .message {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    section.chat__section {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .brand h1 {
+        font-size: 16px;
+    }
+
+    .message__area {
+        height: 300px;
+    }
+
+    .message {
+        max-width: 220px;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand h1 {
+        font-size: 14px;
+    }
+
+    .message__area {
+        height: 250px;
+    }
+
+    .message {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
